@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 django = "==2.2.5"
 django-dotenv = "*"
+mysqlclient = "*"
+mysql-connector-python = "*"
+zappa = "*"
 
 [dev-packages]
 
