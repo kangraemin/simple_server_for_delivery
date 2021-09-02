@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+from .utils import to_bool
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool(to_bool(os.environ.get("DEBUG")))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["r5670326j8.execute-api.ap-northeast-2.amazonaws.com", "127.0.0.1"]
 
 
 # Application definition
