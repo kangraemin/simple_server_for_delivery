@@ -9,6 +9,7 @@ django-dotenv = "*"
 mysqlclient = "*"
 mysql-connector-python = "*"
 zappa = "*"
+troposphere = "<3"
 
 [dev-packages]
 
