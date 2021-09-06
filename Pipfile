@@ -10,6 +10,7 @@ mysqlclient = "*"
 mysql-connector-python = "*"
 zappa = "*"
 troposphere = "<3"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 
