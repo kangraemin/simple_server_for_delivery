@@ -19,5 +19,6 @@ import core.views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("test/", core.views.home, name="home"),
+    path("api/token/", include("core.urls")),
+    path("test/", core.views.HelloView.as_view(), name="home"),
 ]
