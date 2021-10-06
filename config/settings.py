@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
 ]
 
+DEFAULT_PAGE_SIZE = 30
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",
