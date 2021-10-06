@@ -43,9 +43,13 @@ INSTALLED_APPS = [
     "foods.apps.FoodsConfig",
     "rest_framework",
     "rest_framework_simplejwt",
+    "rest_framework_api_key",
 ]
 
 DEFAULT_PAGE_SIZE = 30
+
+API_KEY_CUSTOM_HEADER = "HTTP_X_API_KEY"
+
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",

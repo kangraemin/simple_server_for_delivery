@@ -11,6 +11,7 @@ mysql-connector-python = "*"
 zappa = "*"
 troposphere = "<3"
 djangorestframework-simplejwt = "*"
+djangorestframework-api-key = "*"
 
 [dev-packages]
 
