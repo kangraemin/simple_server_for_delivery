@@ -20,5 +20,6 @@ import core.views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/token/", include("core.urls")),
+    path("api/restaurants/", include("restaurants.urls")),
     path("test/", core.views.HelloView.as_view(), name="home"),
 ]
